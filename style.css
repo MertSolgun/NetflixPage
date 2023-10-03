@@ -1,0 +1,390 @@
+body {
+  background-color: black;
+}
+
+.tvmain {
+  position: relative;
+}
+
+.tv-image {
+  position: absolute;
+}
+.tv-image img {
+  width: 100%;
+}
+
+.tv-video video {
+  min-width: 40rem;
+  min-height: 20rem;
+  padding-left: 50px;
+  padding-top: 70px;
+}
+
+.nt-logo svg {
+  fill: #e51d19;
+}
+header {
+  background-image: url(./img/nbg.jpg);
+  min-height: 32rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom: 10px solid #1b1b1b;
+}
+.bg-opacity {
+  padding-top: 20px;
+  height: 50vh;
+  position: relative;
+  background: rgb(0 0 0 / 40%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+#states {
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
+#email {
+  background-color: black;
+  opacity: 0.6;
+  border: 0.5px solid gray;
+  padding: 15px 15px 14px;
+  border-radius: 5px;
+  width: 25%;
+  color: white;
+}
+.watchevery {
+  border-bottom: 10px solid #1b1b1b;
+}
+.device-main {
+  position: relative;
+}
+
+.device-apple {
+  position: absolute;
+  top: 2.2rem;
+  z-index: -1;
+  width: 60%;
+  left: 7rem;
+}
+
+input::placeholder {
+  color: transparent;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  padding: 5px;
+  position: relative;
+  top: 5px;
+  color: white;
+  text-align: justify;
+}
+
+input:focus::placeholder,
+input:not(:placeholder-shown)::placeholder {
+  position: relative;
+  top: -5px;
+  color: white;
+  transform: translateY(-8%);
+  opacity: 1;
+  font-size: 12px;
+}
+
+.tvandcontent {
+  border-bottom: 10px solid #1b1b1b;
+}
+
+.film-box img {
+  width: 4rem;
+  height: 5rem;
+}
+
+.gif-icon img {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 20px;
+}
+
+.film-box {
+  border: 1px solid gray;
+  position: absolute;
+  min-width: 20rem;
+  display: flex;
+  left: 25%;
+  bottom: 8%;
+  background-color: black;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px;
+}
+.mobilecontent {
+  border-bottom: 10px solid #1b1b1b;
+}
+.mobile-img-container {
+  position: relative;
+}
+
+#askedinput {
+  background-color: #1a2435;
+  border: 1px solid gray;
+  padding: 0px 15px 20px;
+  border-radius: 5px;
+  width: 55%;
+  margin: 5px;
+}
+#askedinput::placeholder {
+  color: white;
+}
+
+@media (min-width: 1080px) and (max-width: 1920px) {
+  .bg-opacity {
+    height: 52vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .bg-opacity {
+    height: 65vh;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bg-opacity {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tv-video video {
+    min-width: 22rem;
+    min-height: 22rem;
+    padding: 0px;
+  }
+  .tv-image img {
+    min-width: 30rem;
+    padding: 0px;
+    min-height: 5rem;
+  }
+
+  .tv-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .tv-image img {
+    width: 100%;
+    height: 50%;
+  }
+  .film-box .text-start {
+    padding-top: 0px;
+  }
+  .gif-icon img {
+    margin-top: 0px;
+  }
+
+  .film-box img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .film-box {
+    border: 1px solid gray;
+    position: absolute;
+    width: 10rem;
+    height: 20%;
+    left: 15%;
+    display: flex;
+    bottom: 0%;
+    background-color: black;
+    padding: 0.3rem 0.35rem;
+    border-radius: 15px;
+  }
+  .device-apple {
+    position: absolute;
+    top: 2.2rem;
+    z-index: -1;
+    width: 60%;
+    left: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #email {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .film-box img {
+    width: 3rem;
+    height: 100%;
+  }
+  .gif-icon img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0px;
+  }
+
+  .tv-video video {
+    min-width: 100%;
+    min-height: 1rem;
+    padding: 0px;
+  }
+  .tv-image img {
+    min-width: 20rem;
+    padding: 0px;
+    min-height: 100%;
+  }
+
+  .tv-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .film-box {
+    border: 1px solid gray;
+    position: absolute;
+    width: 10rem;
+    height: 25%;
+    left: 5%;
+    display: flex;
+    bottom: 0%;
+    background-color: black;
+    padding: 0.3rem 0.35rem;
+    border-radius: 15px;
+  }
+}
+
+.faq {
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px;
+  border-top: 6px solid #333;
+  color: white;
+  border-bottom: 10px solid #1b1b1b;
+}
+
+.faq h2 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.accordion {
+  margin: 60px auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordion li label:hover {
+  background-color: #605d5d;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  position: relative;
+  cursor: pointer;
+}
+
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordion .content {
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+
+.faq .email-signup {
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+
+.faq small {
+  font-size: 20px;
+}
+
+.footer {
+  padding: 50px 15% 10px;
+
+  color: #777;
+}
+
+.footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.footer .col {
+  flex-basis: 25%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.footer .col a {
+  display: block;
+  color: #e6e6e6;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.footer .row {
+  align-items: flex-start;
+  padding: 10px 0px;
+}
+
+.footer .lang-btn {
+  color: #fff;
+  padding: 5px 25px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.copyright-text {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
